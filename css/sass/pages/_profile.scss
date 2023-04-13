@@ -1,0 +1,92 @@
+/* Start Profile*/
+.profile {
+  .card {
+    @include unwantedRemove;
+  }
+  .first {
+    margin-bottom: 30px;
+    font-family: $nunito;
+    img {
+      width: 120px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    .social-media {
+      font-size: 20px;
+      li {
+        height: 24px;
+        a {
+          color: rgba(1, 41, 112, 0.5);
+          transition: $transition;
+          &:hover {
+            color: $first-color;
+          }
+        }
+      }
+    }
+  }
+  .second {
+    .nav-tabs {
+      border-bottom: 2px solid #ebeef4;
+      .nav-item {
+        .nav-link {
+          margin-bottom: -2px;
+          border: none;
+          color: #2c384e;
+          transition: $transition;
+          &:hover {
+            isolation: initial;
+            color: $alt-color;
+          }
+          &.active {
+            color: $alt-color;
+            border-bottom: 2px solid $alt-color;
+          }
+        }
+      }
+    }
+    .tab-content {
+      #overview-tab-pane {
+        h3 {
+          font: {
+            size: 18px;
+            family: $poppins;
+          }
+          color: #012970;
+          margin: 5px 0 25px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+        .info {
+          .row {
+            margin-bottom: 20px;
+            font-size: 15px;
+            & :first-child {
+              color: rgba(1, 41, 112, 0.6);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      #edit-tab-pane {
+        form {
+          .row {
+            label {
+              color: #01297099;
+            }
+            img {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Profile*/

@@ -1,0 +1,44 @@
+.main {
+  width: calc(100% - 300px);
+  top: 60px;
+  padding: 20px 30px;
+  transition: $transition;
+  .pageTitle {
+    font-family: $nunito;
+    h1 {
+      font-size: 24px;
+      color: $first-color;
+    }
+    nav {
+      .breadcrumb {
+        .breadcrumb-item {
+          font-size: 14px;
+          color: #899bbd;
+          a {
+            color: #899bbd;
+            transition: $transition;
+            &:hover {
+              color: #51678f;
+            }
+          }
+          &.active {
+            color: #51678f;
+          }
+        }
+      }
+    }
+  }
+  &.full-content {
+    width: 100%;
+  }
+  @include breakpoints(xlarge) {
+    & {
+      width: 100%;
+    }
+  }
+  @include breakpoints(small) {
+    & {
+      padding: 20px;
+    }
+  }
+}

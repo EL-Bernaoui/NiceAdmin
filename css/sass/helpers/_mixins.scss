@@ -1,0 +1,142 @@
+// Media Queries Mixin
+@mixin breakpoints($point) {
+  @if $point == custom {
+    @media (max-width: 450px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == xlarge {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+}
+
+// Mixin for header card with the dropdown menu
+@mixin myCardHeader {
+  .card-header {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 23px;
+    p {
+      margin: 0;
+      font-family: $poppins;
+      color: #899bbd;
+      font-size: 14px;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: $first-color;
+      }
+    }
+    .dropdown {
+      .dropdown-toggle {
+        border: none;
+        background: none;
+        outline: none;
+        position: relative;
+        z-index: 2;
+        i {
+          color: #aab7cf;
+          transition: $transition;
+        }
+        &:hover i,
+        &:focus i {
+          color: $first-color;
+        }
+      }
+      .dropdown-menu {
+        border: none;
+        box-shadow: rgba(82, 63, 105, 0.2) 0px 5px 30px 0px;
+        inset: 5px 0px auto -125px !important;
+        z-index: 1;
+        li {
+          .dropdown-item {
+            font-size: 14px;
+            padding: 8px 15px;
+            letter-spacing: 1px;
+            color: var(--bs-dropdown-link-color);
+          }
+          &:first-child .dropdown-item {
+            font-weight: 600;
+            color: #aab7cf;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          right: 15px;
+          top: -20px;
+          border: 10px solid transparent {
+            bottom-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mixin to remove bootstrap style from card
+@mixin unwantedRemove {
+  border: none;
+  padding: 20px;
+  box-shadow: $box-shadow;
+}
+
+// Mixin For bootstrap Accordion
+@mixin myAccordion {
+  .accordion {
+    .accordion-item {
+      border: none;
+      h2 {
+        .accordion-button {
+          font-family: $nunito;
+          padding: 15px 25px 15px 0;
+          &:not(.collapsed) {
+            color: $alt-color;
+            background: none;
+            box-shadow: none;
+            &::after {
+              background-image: var(--bs-accordion-btn-icon);
+              transform: translateY(-50%) rotate(-180deg);
+            }
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &::after {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #dee2e6;
+      }
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0 0 15px;
+          font-size: 15px;
+          color: #3e4f6f;
+        }
+      }
+    }
+  }
+}

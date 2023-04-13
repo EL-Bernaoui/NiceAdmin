@@ -1,0 +1,80 @@
+/* Start Register Page */
+.register,
+.login {
+  .register-logo {
+    a {
+      gap: 5px;
+      img {
+        width: 24px;
+      }
+      h2 {
+        font-size: 26px;
+        font-family: $nunito;
+        color: $first-color;
+        @include breakpoints(medium) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .card {
+    box-shadow: $box-shadow;
+    padding: 20px;
+    width: 400px;
+    .head {
+      h2 {
+        color: $first-color;
+        font: {
+          size: 24px;
+          family: $poppins;
+          weight: 500;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 32px;
+      }
+    }
+    form {
+      .input-group-text {
+        background-color: #e9ecef;
+      }
+      .form-check-label {
+        a {
+          text-decoration: underline;
+          color: $alt-color;
+          transition: $transition;
+          &:hover {
+            color: #717ff5;
+          }
+        }
+      }
+    }
+    .foot {
+      font-size: 14px;
+      color: #444;
+      a {
+        color: $alt-color;
+        transition: $transition;
+        &:hover {
+          color: #717ff5;
+        }
+      }
+    }
+    @include breakpoints(medium) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+}
+.who {
+  margin: 20px 0 30px;
+  .me {
+    font-size: 15px;
+  }
+}
+/* End Register Page */

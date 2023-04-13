@@ -1,0 +1,37 @@
+/* Start F.A.Q*/
+.faq {
+  .card {
+    @include unwantedRemove;
+    margin-bottom: 30px;
+    h3 {
+      font: {
+        size: 18px;
+        weight: 500;
+        family: $poppins;
+      }
+      color: $first-color;
+      margin-bottom: 24px;
+    }
+  }
+  .faq-1 {
+    .box {
+      h6 {
+        font: {
+          size: 18px;
+          weight: 600;
+          family: $nunito;
+        }
+        color: $alt-color;
+      }
+      p {
+        color: #6980aa;
+      }
+    }
+  }
+  .faq-2,
+  .faq-3,
+  .faq-4 {
+    @include myAccordion;
+  }
+}
+/* End F.A.Q*/

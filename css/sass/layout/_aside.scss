@@ -1,0 +1,111 @@
+/* Start Aside */
+aside {
+  width: 300px;
+  height: calc(100vh - 60px);
+  top: 60px;
+  left: 0;
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  padding: 20px;
+  z-index: 994;
+  transition: $transition;
+  .nav {
+    display: flex;
+    flex-direction: column;
+    .main-link {
+      margin-bottom: 5px;
+      > a,
+      .accordion-button {
+        gap: 10px;
+        font-size: 15px;
+        padding: 10px 15px;
+        color: $first-color;
+        border-radius: 4px;
+        transition: $transition;
+        i {
+          color: #899bbd;
+          font-size: 16px;
+        }
+      }
+      .accordion-header {
+        .accordion-button {
+          padding: 12px 15px;
+          &::after {
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+          }
+          &:focus,
+          &:not(.colapsed) {
+            box-shadow: none;
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          padding-top: 5px !important;
+          li {
+            a {
+              display: block;
+              padding: 10px 0px 10px 55px;
+              font-size: 14px;
+              color: $first-color;
+              font-weight: 600;
+              position: relative;
+              transition: $transition;
+              &::before {
+                content: "\f28a";
+                position: absolute;
+                font-family: "bootstrap-icons";
+                left: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 6px;
+                color: #012986;
+                line-height: 6px;
+                border-radius: 50%;
+                transition: $transition;
+              }
+            }
+            &:hover a,
+            &.active a {
+              color: $alt-color;
+            }
+            &.active a::before {
+              background-color: $alt-color;
+            }
+          }
+        }
+      }
+      &:hover > a,
+      &.active > a,
+      &:hover .accordion-header .accordion-button,
+      &.active .accordion-header .accordion-button {
+        color: $alt-color;
+        background-color: $light-bg !important;
+      }
+      &:hover > a i,
+      &.active > a i,
+      &:hover .accordion-header .accordion-button i,
+      &.active .accordion-header .accordion-button i {
+        color: $alt-color;
+      }
+    }
+  }
+  .nav-head {
+    font-size: 11px;
+    color: #899bbd;
+    margin: 10px 0 5px 15px;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #aab7cf;
+  }
+  &.hide {
+    left: -100%;
+  }
+}
+/* End Aside */

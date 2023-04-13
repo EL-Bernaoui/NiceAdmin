@@ -1,0 +1,22 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $opan-sans;
+  background: $light-bg;
+  color: #444444;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+/* End Global Rules */

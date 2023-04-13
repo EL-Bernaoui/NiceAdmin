@@ -1,0 +1,353 @@
+/* Start Header */
+header {
+  height: 60px;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  padding-left: 20px;
+  z-index: 999;
+  .logo-toggle {
+    width: 322px;
+    .logo {
+      gap: 5px;
+      img {
+        width: 24px;
+      }
+      h2 {
+        font-size: 26px;
+        font-family: $nunito;
+        color: $first-color;
+        @include breakpoints(small) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+    .toggle-aside {
+      font-size: 32px;
+      color: $first-color;
+      padding-left: 15px;
+      cursor: pointer;
+    }
+    @include breakpoints(xlarge) {
+      & {
+        width: auto;
+      }
+    }
+  }
+  form {
+    position: relative;
+    width: 270px;
+    transition: $transition;
+    &:focus-within {
+      width: 350px;
+    }
+    input {
+      border: 1px solid rgba(1, 41, 112, 0.2);
+      outline: none;
+      padding: 7px 40px 7px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      &:focus,
+      &:hover {
+        box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
+        border: 1px solid rgba(1, 41, 112, 0.3);
+      }
+    }
+    button {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: none;
+      .input-search {
+        color: $first-color;
+      }
+    }
+    @include breakpoints(large) {
+      & {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -60px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(1, 41, 112, 0.1);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: $transition;
+      }
+      &:focus-within {
+        width: 100%;
+      }
+      &.show {
+        bottom: -75px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
+    }
+  }
+  nav {
+    ul {
+      li {
+        a {
+          font-size: 22px;
+          color: #012970;
+          position: relative;
+        }
+      }
+      > .search {
+        display: none;
+        @include breakpoints(large) {
+          & {
+            display: block;
+          }
+        }
+      }
+      .first,
+      .second {
+        a {
+          i {
+            &::after {
+              position: absolute;
+              color: #fff;
+              text-align: center;
+              line-height: 18px;
+              font-size: 12px;
+              width: 18px;
+              height: 18px;
+              border-radius: 5px;
+              inset: -2px -5px auto auto;
+            }
+          }
+        }
+        .content {
+          border-radius: 5px;
+          box-shadow: rgba(82, 63, 105, 0.2) 0px 5px 30px 0px;
+          width: 320px;
+          padding: 10px 0px;
+          inset: 45px -15px auto auto !important;
+          transform: translate(0, 0) !important;
+          position: relative;
+          .head {
+            gap: 10px;
+            font-size: 15px;
+            padding: 10px 25px 15px;
+            border-bottom: 1px solid #ccc;
+            p {
+              color: var(--bs-dropdown-header-color);
+              font-size: 15px;
+              @include breakpoints(custom) {
+                & {
+                  width: 160px;
+                }
+              }
+            }
+            a {
+              font-size: 11px;
+              background-color: #0d6efd;
+              padding: 5px 8px;
+            }
+          }
+          .body {
+            li {
+              padding: 15px 10px;
+              border-bottom: 1px solid #ccc;
+              transition: $transition;
+              &:hover {
+                background-color: $light-bg;
+              }
+              .info {
+                h5 {
+                  font-size: 16px;
+                  color: #212529;
+                }
+                p {
+                  font-size: 13px;
+                  color: #919191;
+                }
+                span {
+                  font-size: 13px;
+                  color: #919191;
+                }
+              }
+            }
+          }
+          .foot {
+            padding: 12px 0 8px;
+            a {
+              font-size: 15px;
+              color: #444;
+              text-decoration: underline;
+              transition: $transition;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            right: 15px;
+            top: -20px;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent transparent white;
+          }
+          @include breakpoints(custom) {
+            & {
+              width: 290px;
+            }
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+      .first {
+        a {
+          i {
+            &::after {
+              content: "4";
+              background-color: rgb(13, 110, 253);
+            }
+          }
+        }
+        .content {
+          @include breakpoints(custom) {
+            & {
+              inset: 45px -112px auto auto !important;
+            }
+          }
+          .body {
+            li {
+              i {
+                font-size: 24px;
+              }
+              .info {
+                p {
+                  margin: -2px 0 -3px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .second {
+        a {
+          i {
+            &::after {
+              content: "3";
+              background-color: rgb(25, 135, 84);
+            }
+          }
+        }
+        .content {
+          .body {
+            li {
+              a {
+                gap: 20px;
+                img {
+                  width: 40px;
+                }
+                .info {
+                  width: 220px;
+                  p {
+                    margin-bottom: -6px;
+                  }
+                }
+              }
+            }
+          }
+          @include breakpoints(custom) {
+            & {
+              inset: 45px -65px auto auto !important;
+            }
+          }
+        }
+      }
+      .third {
+        > a {
+          padding-right: 20px;
+          img {
+            width: 35px;
+          }
+          > span {
+            font-size: 14px;
+            &::after {
+              content: "";
+              display: inline-block;
+              margin-left: 0.255em;
+              vertical-align: 0.255em;
+              border-top: 0.3em solid;
+              border-right: 0.3em solid transparent;
+              border-bottom: 0;
+              border-left: 0.3em solid transparent;
+            }
+            @include breakpoints(large) {
+              & {
+                display: none;
+              }
+            }
+          }
+        }
+        .content {
+          inset: 45px 20px auto auto !important;
+          transform: translate(0, 0) !important;
+          border-radius: 5px;
+          box-shadow: rgba(82, 63, 105, 0.2) 0px 5px 30px 0px;
+          width: 240px;
+          padding: 10px 0 0;
+          position: relative;
+          .head {
+            padding: 10px 0;
+            h4 {
+              font-size: 18px;
+              color: #444;
+            }
+            span {
+              font-size: 14px;
+              color: #6c757d;
+            }
+          }
+          .body {
+            li {
+              border-top: 1px solid #ccc;
+              transition: $transition;
+              &:hover {
+                background-color: $light-bg;
+              }
+              a {
+                padding: 10px 15px;
+                color: #212529;
+                gap: 10px;
+                font-size: 14px;
+                i {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            right: 15px;
+            top: -20px;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent transparent white;
+          }
+          @include breakpoints(custom) {
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Header */

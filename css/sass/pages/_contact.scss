@@ -1,0 +1,54 @@
+/* Start Contact*/
+.contact {
+  .info {
+    padding: 28px 30px !important;
+    i {
+      font-size: 38px;
+      color: $alt-color;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+    }
+    h6 {
+      font: {
+        size: 20px;
+        family: $nunito;
+      }
+      margin: 20px 0 10px;
+      color: $first-color;
+    }
+    address,
+    span {
+      font-size: 14px;
+      color: #444;
+      line-height: 24px;
+    }
+  }
+  .card {
+    @include unwantedRemove;
+    margin-bottom: 30px;
+    padding: 24px;
+    form {
+      input,
+      textarea {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+      .form-control {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      button {
+        background-color: $alt-color;
+        padding: 10px 30px;
+        border-radius: 4px;
+        transition: $transition;
+        &:hover {
+          background-color: #5969f3;
+        }
+      }
+    }
+  }
+}
+/* End Contact*/

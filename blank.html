@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <title>Pages / Blank - NiceAdmin</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Normalize File -->
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap Link Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header
+      class="d-flex align-items-center position-fixed start-0 top-0 w-100 bg-white"
+    >
+      <!-- Start Logo -->
+      <div
+        class="logo-toggle d-flex align-items-center justify-content-between"
+      >
+        <a class="logo d-flex align-items-center" href="index.html">
+          <img src="img/logo.png" alt="Logo" />
+          <h2 class="m-0 fw-bold">NiceAdmin</h2>
+        </a>
+        <i class="bi bi-list toggle-aside"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Start Search Bar -->
+      <form class="px-4" id="search-form" method="post" action="#">
+        <input class="w-100" type="text" placeholder="Search" />
+        <button class="position-absolute border-0 bg-transparent" type="submit">
+          <i class="bi bi-search input-search"></i>
+        </button>
+      </form>
+      <!-- End Search Bar -->
+      <!-- Start Nav -->
+      <nav class="d-flex ms-auto">
+        <ul class="d-flex align-items-center gap-4 m-0">
+          <li class="search">
+            <a href="#">
+              <i class="bi bi-search search-icon"></i>
+            </a>
+          </li>
+          <li class="first dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-bell bell"></i>
+            </a>
+            <div class="content dropdown-menu border-0">
+              <div
+                class="head d-flex justify-content-center align-items-center"
+              >
+                <p class="m-0">You have 4 new notifications</p>
+                <a class="fw-bold text-white rounded-pill" href="#">View all</a>
+              </div>
+              <ul class="body p-0">
+                <li
+                  class="d-flex justify-content-center align-items-center gap-4"
+                >
+                  <i class="bi bi-exclamation-circle text-warning"></i>
+                  <div class="info">
+                    <h5>Lorem Ipsum</h5>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <span>30 min. ago</span>
+                  </div>
+                </li>
+                <li
+                  class="d-flex justify-content-center align-items-center gap-4"
+                >
+                  <i class="bi bi-x-circle text-danger"></i>
+                  <div class="info">
+                    <h5>Atque rerum nesciunt</h5>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <span>1 hr. ago</span>
+                  </div>
+                </li>
+                <li
+                  class="d-flex justify-content-center align-items-center gap-4"
+                >
+                  <i class="bi bi-check-circle text-success"></i>
+                  <div class="info">
+                    <h5>Sit rerum fuga</h5>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <span>2 hrs. ago</span>
+                  </div>
+                </li>
+                <li
+                  class="d-flex justify-content-center align-items-center gap-4"
+                >
+                  <i class="bi bi-info-circle text-primary"></i>
+                  <div class="info">
+                    <h5>Dicta reprehenderit</h5>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <span>4 hrs. ago</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="foot text-center">
+                <a href="#">Show all notifications</a>
+              </div>
+            </div>
+          </li>
+          <li class="second dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-chat-left-text"></i>
+            </a>
+            <div class="content dropdown-menu border-0">
+              <div
+                class="head d-flex justify-content-center align-items-center"
+              >
+                <p class="m-0">You have 3 new messages</p>
+                <a class="fw-bold text-white rounded-pill" href="#">View all</a>
+              </div>
+              <ul class="body p-0">
+                <li>
+                  <a
+                    class="d-flex justify-content-center align-items-start"
+                    href="#"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="img/friend-01.jpg"
+                      alt="message picture"
+                    />
+                    <div class="info">
+                      <h5>Khalid Bayka</h5>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <span>4 hrs. ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex justify-content-center align-items-start"
+                    href="#"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="img/friend-02.jpg"
+                      alt="message picture"
+                    />
+                    <div class="info">
+                      <h5>Issam Torinto</h5>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <span>6 hrs. ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex justify-content-center align-items-start"
+                    href="#"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="img/friend-03.jpg"
+                      alt="message picture"
+                    />
+                    <div class="info">
+                      <h5>Ismail Zerga</h5>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <span>8 hrs. ago</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="foot text-center">
+                <a href="#">Show all messages</a>
+              </div>
+            </div>
+          </li>
+          <li class="third dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                class="rounded-circle"
+                src="img/me.jpg"
+                alt="personal image"
+              />
+              <span class="ps-2 fw-semibold position-relative"
+                >A. EL Bernaoui</span
+              >
+            </a>
+            <div class="content dropdown-menu border-0">
+              <div class="head text-center">
+                <h4 class="fw-semibold m-0">Achraf EL Bernaoui</h4>
+                <span>Web Developer</span>
+              </div>
+              <ul class="body p-0">
+                <li>
+                  <a class="d-flex align-items-center" href="profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="profile.html">
+                    <i class="bi bi-gear"></i>
+                    <span>Account Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="faq.html">
+                    <i class="bib bi-question-circle"></i>
+                    <span>Need Help?</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- End Nav -->
+    </header>
+    <!-- End Header -->
+    <!-- Start Aside -->
+    <aside class="position-fixed bg-white overflow-y-auto">
+      <ul class="nav accordion accordion-flush p-0" id="asideAccordion">
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="index.html"
+          >
+            <i class="bi bi-grid"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="main-link accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header">
+            <a
+              href="#"
+              class="accordion-button collapsed d-flex align-items-center w-100 fw-semibold bg-transparent"
+              data-bs-toggle="collapse"
+              data-bs-target="#one"
+              aria-expanded="false"
+              aria-controls="one"
+            >
+              <i class="bi bi-menu-button-wide"></i>
+              Components
+            </a>
+          </h2>
+          <div
+            id="one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#asideAccordion"
+          >
+            <ul class="accordion-body p-0">
+              <li>
+                <a href="#">Alerts</a>
+              </li>
+              <li>
+                <a href="#">Accordion</a>
+              </li>
+              <li>
+                <a href="#">Badges</a>
+              </li>
+              <li>
+                <a href="#">Breadcrumbs</a>
+              </li>
+              <li>
+                <a href="#">Buttons</a>
+              </li>
+              <li>
+                <a href="#">Cards</a>
+              </li>
+              <li>
+                <a href="#">Carousel</a>
+              </li>
+              <li>
+                <a href="#">List group</a>
+              </li>
+              <li>
+                <a href="#">Modal</a>
+              </li>
+              <li>
+                <a href="#">Tabs</a>
+              </li>
+              <li>
+                <a href="#">Pagination</a>
+              </li>
+              <li>
+                <a href="#">Progress</a>
+              </li>
+              <li>
+                <a href="#">Spinners</a>
+              </li>
+              <li>
+                <a href="#">Tooltips</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-link accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header">
+            <a
+              href="#"
+              class="accordion-button collapsed d-flex align-items-center w-100 fw-semibold bg-transparent"
+              data-bs-toggle="collapse"
+              data-bs-target="#two"
+              aria-expanded="false"
+              aria-controls="two"
+            >
+              <i class="bi bi-journal-text"></i>
+              Forms
+            </a>
+          </h2>
+          <div
+            id="two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#asideAccordion"
+          >
+            <ul class="accordion-body p-0">
+              <li>
+                <a href="#">Form Elements</a>
+              </li>
+              <li>
+                <a href="#">Form Layouts</a>
+              </li>
+              <li>
+                <a href="#">Form Editors</a>
+              </li>
+              <li>
+                <a href="#">Form Validation</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-link accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header">
+            <a
+              href="#"
+              class="accordion-button collapsed d-flex align-items-center w-100 fw-semibold bg-transparent"
+              data-bs-toggle="collapse"
+              data-bs-target="#three"
+              aria-expanded="false"
+              aria-controls="three"
+            >
+              <i class="bi bi-layout-text-window-reverse"></i>
+              Tables
+            </a>
+          </h2>
+          <div
+            id="three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#asideAccordion"
+          >
+            <ul class="accordion-body p-0">
+              <li>
+                <a href="#">General Tables</a>
+              </li>
+              <li>
+                <a href="#">Data Tables</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-link accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header">
+            <a
+              href="#"
+              class="accordion-button collapsed d-flex align-items-center w-100 fw-semibold bg-transparent"
+              data-bs-toggle="collapse"
+              data-bs-target="#four"
+              aria-expanded="false"
+              aria-controls="four"
+            >
+              <i class="bi bi-bar-chart"></i>
+              Charts
+            </a>
+          </h2>
+          <div
+            id="four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#asideAccordion"
+          >
+            <ul class="accordion-body p-0">
+              <li>
+                <a href="#">Chart.js</a>
+              </li>
+              <li>
+                <a href="#">ApexCharts</a>
+              </li>
+              <li>
+                <a href="#">ECharts</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-link accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header">
+            <a
+              href="#"
+              class="accordion-button collapsed d-flex align-items-center w-100 fw-semibold bg-transparent"
+              data-bs-toggle="collapse"
+              data-bs-target="#five"
+              aria-expanded="false"
+              aria-controls="five"
+            >
+              <i class="bi bi-gem"></i>
+              Icons
+            </a>
+          </h2>
+          <div
+            id="five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#asideAccordion"
+          >
+            <ul class="accordion-body p-0">
+              <li>
+                <a href="#">Bootstrap Icons</a>
+              </li>
+              <li>
+                <a href="#">Remix Icons</a>
+              </li>
+              <li>
+                <a href="#">Boxicons</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-head fw-semibold">PAGES</li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="profile.html"
+          >
+            <i class="bi bi-person"></i>
+            Profile
+          </a>
+        </li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="faq.html"
+          >
+            <i class="bi bi-question-circle"></i>
+            F.A.Q
+          </a>
+        </li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="Contact.html"
+          >
+            <i class="bi bi-envelope"></i>
+            Contact
+          </a>
+        </li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="register.html"
+          >
+            <i class="bi bi-card-list"></i>
+            Register
+          </a>
+        </li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="login.html"
+          >
+            <i class="bi bi-box-arrow-in-right"></i>
+            Login
+          </a>
+        </li>
+        <li class="main-link">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="Error404.html"
+          >
+            <i class="bi bi-dash-circle"></i>
+            Error 404
+          </a>
+        </li>
+        <li class="main-link active">
+          <a
+            class="d-flex align-items-center w-100 fw-semibold"
+            href="blank.html"
+          >
+            <i class="bi bi-file-earmark"></i>
+            Blank
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Aside -->
+    <!-- Start Main -->
+    <div class="main position-relative ms-auto" id="main">
+      <!-- Start PageTitle -->
+      <div class="pageTitle">
+        <h1 class="m-0 fw-semibold">Blank Page</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item fw-semibold">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item fw-semibold">Pages</li>
+            <li class="breadcrumb-item fw-semibold active" aria-current="page">
+              Blank
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End PageTitle -->
+      <!-- Start Section Blank -->
+      <section class="blank">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <h4 class="mb-4">Example Card</h4>
+              <p>
+                This is an examle page with no contrnt. You can use it as a
+                starter for your custom pages.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <h4 class="mb-4">Example Card</h4>
+              <p>
+                This is an examle page with no contrnt. You can use it as a
+                starter for your custom pages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Section Blank -->
+    </div>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer id="footer" class="footer ms-auto text-center">
+      <div class="copyright">
+        &copy; Copyright <strong>NiceAdmin</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <div class="me">
+        Redesigned by
+        <a class="fw-bold" href="https://github.com/EL-Bernaoui/">Elbernaoui</a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Back-to-top button -->
+    <div class="back-to-top position-fixed text-white text-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </div>
+    <!-- End Back-to-top button -->
+
+    <!-- Bootstrap Link js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery Link -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

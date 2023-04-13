@@ -1,0 +1,19 @@
+/* Start Back-to-top Button*/
+.back-to-top {
+  z-index: 990;
+  right: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: $alt-color;
+  font-size: 26px;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: $transition;
+  &:hover {
+    background: #6776f4;
+  }
+}
+/* End Back-to-top Button*/

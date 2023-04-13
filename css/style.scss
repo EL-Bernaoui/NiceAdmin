@@ -1,0 +1,18 @@
+@import "sass/components/variables";
+@import "sass/components/global-rules";
+@import "sass/helpers/mixins";
+
+@import "sass/layout/header";
+@import "sass/layout/aside";
+@import "sass/layout/mainDiv";
+
+@import "sass/pages/dashboard";
+@import "sass/pages/profile";
+@import "sass/pages/faq";
+@import "sass/pages/contact";
+@import "sass/pages/registerAndLogin";
+@import "sass/pages/error404";
+@import "sass/pages/blank";
+
+@import "sass/layout/footer";
+@import "sass/layout/back-to-top";

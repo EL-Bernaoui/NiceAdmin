@@ -1,0 +1,34 @@
+/* Start Footer*/
+footer {
+  width: calc(100% - 300px);
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #cddfff;
+  font-size: 15px;
+  .copyright {
+    strong {
+      color: $first-color;
+    }
+  }
+  .credits {
+    font-size: 14px;
+    a {
+      color: $alt-color;
+    }
+  }
+  .me {
+    font-size: 13px;
+    a {
+      color: $alt-color;
+    }
+  }
+  &.full-content {
+    width: 100%;
+  }
+  @include breakpoints(xlarge) {
+    & {
+      width: 100%;
+    }
+  }
+}
+/* End Footer*/

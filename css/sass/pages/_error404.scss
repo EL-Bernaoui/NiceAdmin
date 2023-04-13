@@ -1,0 +1,39 @@
+/* Start Error Page*/
+.error404 {
+  padding: 30px;
+  h2 {
+    font-size: 180px;
+    color: $alt-color;
+    line-height: 150px;
+    font-family: $nunito;
+    @media (max-width: 370px) {
+      & {
+        margin-left: -47px;
+      }
+    }
+  }
+  p {
+    color: $first-color;
+    font-size: 24px;
+    font-family: $nunito;
+    margin-bottom: 30px;
+  }
+  a {
+    background-color: #51678f;
+    width: fit-content;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: $transition;
+    &:hover {
+      background-color: #3e4f6f;
+    }
+  }
+  img {
+    @media (min-width: 768px) {
+      & {
+        max-width: 50%;
+      }
+    }
+  }
+}
+/* End Error Page*/
